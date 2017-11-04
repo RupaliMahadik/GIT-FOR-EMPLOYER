@@ -1,0 +1,581 @@
+<!--
+    @author: Rupali Mahadik
+    @description: p41-Webprotocol.
+
+ -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .footer {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
+      background-color: #ffd9cc;
+      text-align: center;
+      font-family: Verdana, sans-serif;
+    }
+
+    a {
+      color: #1e90ed;
+    }
+
+    body {
+      padding-bottom: 200px;
+    }
+
+    input[type=checkbox] {
+      transform: scale(1.5);
+    }
+
+    @media only screen and (max-width: 500px) {
+      .footer {
+        position: relative;
+      }
+
+      body {
+        padding-bottom: 0px;
+      }
+    }
+
+    ul.breadcrumb {
+      padding: 10px 16px;
+      list-style: none;
+      background-color: #ffd9cc;
+      font-size: 15px;
+      font-family: Verdana, sans-serif;
+    }
+
+    ul.breadcrumb li {
+      display: inline;
+    }
+
+    ul.breadcrumb li+li:before {
+      padding: 8px;
+      color: #0275d8;
+      content: "\00bb";
+    }
+
+    ul.breadcrumb li a {
+      color: #0275d8;
+      text-decoration: none;
+    }
+
+    ul.breadcrumb li a:hover {
+      color: #4ae0a6;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div style="text-align:center">
+      <h1><img src="logo.png" alt="logo" />
+      <strong>Data Portal of the National Center for Biomedical Glycomics</strong></h1>
+      <ul class="breadcrumb">
+        <li><a href="SingledataH9.html">Single Data Page H9</a></li>
+        <li><a href="SingledataH9NC.html">Single Data Page H9-NC</a></li>
+        <li><a href="compare.html">Comparision Page</a></li>
+
+      </ul>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">Welcome</div>
+      <div class="panel-body">
+        <p>Welcome to the data portal of the <a href="http://glycomics.ccrc.uga.edu/">National Center for Biomedical Glycomics</a>. This webpage provides the data that has been generated analysis cell lines that have been differentiated into different types
+          of tissue.The data that can be found is </p>
+        <ul>
+          <li>Whole cell glycan expression data <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a></li>
+          <li>Whole cell glyco-protein expression data <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a></li>
+          <li>Cell surface glyco-protein expression data <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a></li>
+          <li>Reporter glyco-protein expression data <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a></li>
+          <li>Secretome glycol-protein expression data <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a></li>
+        </ul>
+        <p>
+          Data can be browsed by selecting a single data sets below or by selecting multiple datasets for comparison
+        </p>
+      </div>
+    </div>
+    <!--   collasiable panel -->
+    <div class="row">
+      <div class="col-md-8 col-xs-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+
+             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                H9-stem
+             </a>
+             </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>Cell line</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  H9-stem
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>NIH Registration Number</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  <a href="https://grants.nih.gov/stem_cells/registry/current.htm?id=414">0062</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>Provider</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  WiCell Research Institute <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>De-differenciation method</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong> Differentiated into</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  Smooth Muscle
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>Differenciation method</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+                </div>
+              </div>
+            </div>
+            <center><input id="B3" type="checkbox" onchange="compare()"><strong> Check here to Compare this cellline! </strong> <br>  <a href="SingledataH9.HTML">Show more data</a></center>
+          </div>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading" role="tab" id="headingOne1">
+            <h4 class="panel-title">
+
+             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+              H9-Neural Crest
+             </a>
+             </h4>
+          </div>
+          <div id="collapseOne1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne1">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>Cell line</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                H9-NC
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>NIH Registration Number</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  <a href="https://grants.nih.gov/stem_cells/registry/current.htm?id=414">0062</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>Provider</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  WiCell Research Institute <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>De-differenciation method</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong> Differentiated into</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  Smooth Muscle
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>Differenciation method</strong>
+                </div>
+                <div class='col-md-7 col-xs-12'>
+                  Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+                </div>
+              </div>
+            </div>
+
+               <center><input id="H8" type="checkbox" onchange="compare()"><strong> Check here to Compare this cellline! </strong> <br>  <a href="SingledataH9NC.HTML">Show more data</a> </center>
+
+          </div>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading" role="tab" id="headingOne2">
+            <h4 class="panel-title">
+             <!-- <input id="B3" type="checkbox" onchange="compare()"> -->
+             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
+              Another Cell line
+             </a>
+             </h4>
+          </div>
+          <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne2">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>Cell line</strong>
+                </div>
+                <!-- <div class='col-md-7 col-xs-12'>
+                  WA09 (H9)
+                </div> -->
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>NIH Registration Number</strong>
+                </div>
+                <!-- <div class='col-md-7 col-xs-12'>
+                  <a href="https://grants.nih.gov/stem_cells/registry/current.htm?id=414">0062</a>
+                </div> -->
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>Provider</strong>
+                </div>
+                <!-- <div class='col-md-7 col-xs-12'>
+                  WiCell Research Institute <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+                </div> -->
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>De-differenciation method</strong>
+                </div>
+                <!-- <div class='col-md-7 col-xs-12'>
+                  Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+                </div> -->
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong> Differentiated into</strong>
+                </div>
+                <!-- <div class='col-md-7 col-xs-12'>
+                  Smooth Muscle
+                </div> -->
+              </div>
+              <div class="row">
+                <div class="col-md-5 col-xs-12">
+                  <strong>Differenciation method</strong>
+                </div>
+                <!-- <div class='col-md-7 col-xs-12'>
+                  Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+                </div> -->
+              </div>
+            </div>
+
+              <!-- <center><input id="H9" type="checkbox" onchange="compare()"><strong> Check here to Compare this cellline! </strong> </center> -->
+    <center><a href="#test">Show more data</a></center>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!--   H9-Smooth Muscle -->
+      <!-- <div class="panel panel-primary">
+          <div class="panel-heading">H9-Smooth Muscle</div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>Cell line</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                WA09 (H9)
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>NIH Registration Number</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                <a href="https://grants.nih.gov/stem_cells/registry/current.htm?id=414">0062</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>Provider</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                WiCell Research Institute <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>De-differenciation method</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong> Differentiated into</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                Smooth Muscle
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>Differenciation method</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+              </div>
+            </div>
+          </div>
+          <div class='panel-footer'>
+            <div class="checkbox">
+              <label>
+                 <input id="H9" type="checkbox" onchange="compare()"> Compare this!
+               </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- H8-Smooth Muscle  -->
+      <!-- <div class="panel panel-primary">
+          <div class="panel-heading"> H8-Smooth Muscle</div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>Cell line</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                GA09 (H8)
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>NIH Registration Number</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                <a href="https://grants.nih.gov/stem_cells/registry/current.htm?id=414">0062</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>Provider</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                WiCell Research Institute <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>De-differenciation method</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong> Differentiated into</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                Smooth Muscle
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>Differenciation method</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+              </div>
+            </div>
+          </div>
+          <div class='panel-footer'>
+            <div class="checkbox">
+              <label>
+                 <input id="H8" type="checkbox" onchange="compare()"> Compare this!
+               </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- B3-Smooth Muscle  -->
+      <!--<div class="panel panel-primary">
+          <div class="panel-heading"> B3-Smooth Muscle</div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>Cell line</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                TA45 (B3)
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>NIH Registration Number</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                <a href="https://grants.nih.gov/stem_cells/registry/current.htm?id=414">0062</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>Provider</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                WiCell Research Institute <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>De-differenciation method</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong> Differentiated into</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                Smooth Muscle
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-xs-12">
+                <strong>Differenciation method</strong>
+              </div>
+              <div class='col-md-7 col-xs-12'>
+                Some method <a href="https://www.ncbi.nlm.nih.gov/pubmed/27993942">(PMID: 27993942)</a>
+              </div>
+            </div>
+          </div>
+          <div class='panel-footer'>
+            <div class="checkbox">
+              <label>
+                 <input id="B3" type="checkbox" onchange="compare()"> Compare this!
+               </label>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- here is comparision for cell line   -->
+      <div class="row">
+        <div class='col-md-4 col-xs-12'>
+          <div class="panel panel-primary">
+            <div class="panel-heading">Available for comparison</div>
+            <div class="panel-body">
+              <div class='list-group'>
+                <div id='C-None' class='list-group-item'>Please select 2 or more cells to start the comparison</div>
+                <div id='C-H9' class='list-group-item hidden'>WA09 (H9)</div>
+                <div id='C-H8' class='list-group-item hidden'>H9-NC</div>
+                <div id='C-B3' class='list-group-item hidden'>H9-STEM</div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button id="reset" class="btn btn-default" onclick="reset()">Reset</button>
+              <button id="compare" class="btn btn-primary" disabled="disabled" onClick="location.href='compare.html'">compare</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">Please note: This webpages show the prototype of data portal of the National Center for Biomedical Glycomics.<br> Data presented on this page are two real data sets produced in 2016-2017 by the center. The functionality on these pages is limited
+        to demonstrate the scope of the data portal <br>once real implementation starts.In the final version of this webpage you will be able to:</strong>
+      </div>
+    </div>
+  </div>
+
+<!-- /* javascript for hide and show option */ -->
+<script language="Javascript">
+  function reset() {
+    $("#H9").prop("checked", false);
+    $("#H8").prop("checked", false);
+    $("#B3").prop("checked", false);
+    $("#C-H9").addClass("hidden");
+    $("#C-H8").addClass("hidden");
+    $("#C-B3").addClass("hidden");
+    $("#C-None").removeClass("hidden");
+  }
+
+  // function gotocomparison() {
+  //   window.location.href = 'testweb2.html';
+  // }
+
+  function compare(cell) {
+    var h9 = $("#H9").prop("checked");
+    var h8 = $("#H8").prop("checked");
+    var b3 = $("#B3").prop("checked");
+    var howmanycheck = 0;
+
+    if (h9) {
+      $("#C-H9").removeClass("hidden");
+      howmanycheck += 1;
+    } else {
+      $("#C-H9").addClass("hidden");
+    }
+    if (h8) {
+      $("#C-H8").removeClass("hidden");
+      howmanycheck += 1;
+    } else {
+      $("#C-H8").addClass("hidden");
+    }
+    if (b3) {
+      $("#C-B3").removeClass("hidden");
+      howmanycheck += 1;
+    } else {
+      $("#C-B3").addClass("hidden");
+    }
+    if (howmanycheck == 0) {
+      $("#C-None").removeClass("hidden");
+    }
+    if (howmanycheck >= 1) {
+      $("#C-None").addClass("hidden");
+    }
+
+    if (howmanycheck >= 2) {
+      $("#compare").removeAttr("disabled");
+    } else {
+      $("#compare").attr("disabled", "disabled");
+    }
+
+  }
+</script>
+</body>
+</html>
